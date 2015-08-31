@@ -58,7 +58,8 @@
                         finished = true;
                     }
                     // recalculate element position
-                    if( ! last_elem.hasClass( 'last' ) && opts.is_shop ) {
+		    //added by strangeman - masonry support
+                    if( ! last_elem.hasClass( 'last' ) ) {
                         position_elem( last_elem, columns, elem );
                     }
 
@@ -77,6 +78,8 @@
                     }, 1000, function() {
                         loading = false;
                     });
+                    //added by strangeman - masonry support
+                    $( window ).trigger('resize');
 
                 }
             });
@@ -103,7 +106,13 @@
                 else if ( ( ( loop - ( offset - 1 ) ) % columns ) === 0 ) {
                     t.addClass('last');
                 }
+		//added by strangeman - masonry support
+                var el = jQuery(t);
+                jQuery( $( opts.contentSelector ) ).append(el).masonry('appended', el, true);
+                jQuery( $( opts.contentSelector ) ).fitVids();
             });
+	    //added by strangeman - masonry support
+	    $( window ).trigger('resize');
         };
 
         // scroll event

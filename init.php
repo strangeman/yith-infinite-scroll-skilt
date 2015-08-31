@@ -1,19 +1,20 @@
 <?php
 /**
- * Plugin Name: YITH Infinite Scrolling
- * Plugin URI: http://yithemes.com/
- * Description: YITH Infinite Scrolling add infinite scroll to your page.
+ * Plugin Name: YITH Infinite Scrolling with Skilt theme support
+ * Plugin URI: https://github.com/strangeman/yith-infinite-scroll-skilt
+ * Description: YITH Infinite Scrolling add infinite scroll to your page. Patched by strangeman for adding Skilt theme support
  * Version: 1.0.2
- * Author: Yithemes
+ * Author: Yithemes, strangeman
  * Author URI: http://yithemes.com/
- * Text Domain: yith-infs
+ * Text Domain: yith-infs-skilt
  * Domain Path: /languages/
  *
- * @author Yithemes
- * @package YITH Infinite Scrolling
- * @version 1.0.2
+ * @author Yithemes, Anton Markelov
+ * @package YITH Infinite Scrolling Skilt
+ * @version 1.0.0
  */
 /*  Copyright 2015  Your Inspiration Themes  ( email: plugins@yithemes.com )
+Copyright 2015  Anton Markelov ( email: doublic@gmail.com )
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as
@@ -50,7 +51,7 @@ register_activation_hook( __FILE__, 'yith_plugin_registration_hook' );
 
 
 if ( ! defined( 'YITH_INFS_VERSION' ) ){
-	define( 'YITH_INFS_VERSION', '1.0.2' );
+	define( 'YITH_INFS_VERSION', '1.0.0' );
 }
 
 if ( ! defined( 'YITH_INFS_FREE_INIT' ) ) {
