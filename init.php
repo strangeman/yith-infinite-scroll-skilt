@@ -11,7 +11,7 @@
  *
  * @author Yithemes, Anton Markelov
  * @package YITH Infinite Scrolling Skilt
- * @version 1.0.0
+ * @version 1.0.1
  */
 /*  Copyright 2015  Your Inspiration Themes  ( email: plugins@yithemes.com )
 Copyright 2015  Anton Markelov ( email: doublic@gmail.com )
